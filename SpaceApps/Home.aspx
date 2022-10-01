@@ -121,16 +121,19 @@ function showSlides(n) {
 }
     </script>
 
-    <div class="box">
-        <form name="search" runat="server">
-            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-        </form>
-        <i class="fas fa-search"></i>
+<div class="box">
+    <form name="search" runat="server">
+        <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" onmouseout="this.value = ''; this.blur();">
+    </form>
+    <i class="fas fa-search"></i>
 
-    </div>
-    <a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
-        <i class="fab fa-youtube"></i>
-    </a>
+</div>
+    <div class="box">
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            </div>
+<a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
+<i class="fab fa-youtube"> </i>
+</a>
 
 
 </body>

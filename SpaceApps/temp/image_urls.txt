@@ -1,0 +1,1 @@
+"https://replicate.com/api/models/stability-ai/stable-diffusion/files/45e440af-26fb-4c2a-a9b4-f4ed784066ff/out-0.png"
