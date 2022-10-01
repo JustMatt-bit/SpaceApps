@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <video autoplay muted loop id="background-video">
@@ -121,11 +122,13 @@ function showSlides(n) {
 }
     </script>
     <form name="search" runat="server">
+
     <div class="box">
         
             <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" >
         
         <i class="fas fa-search"></i>
+
 
     </div>
     <div class="box" runat="server">
