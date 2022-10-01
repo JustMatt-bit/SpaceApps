@@ -67,26 +67,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\Austronout-space-station.jpg" />
-    <Content Include="images\Mars-mountain-grey.jpg" />
-    <Content Include="images\Mars-rock-grey-2.jpg" />
-    <Content Include="images\Mars-rock-grey-3.jpg" />
-    <Content Include="images\Mars-rocks.jpg" />
-    <Content Include="images\Mars-rover-grey.jpg" />
-    <Content Include="images\Mars-rover-tracks-2.jpg" />
-    <Content Include="images\Mars-rover-tracks.jpg" />
-    <Content Include="images\Mars-sunset-grey.jpg" />
-    <Content Include="images\Mars-tracks-grey-2.jpg" />
-    <Content Include="images\Mars-valley-grey.jpg" />
-    <Content Include="images\planet-sunset.jpeg" />
-    <Content Include="images\planet-view-space-station.jpg" />
-    <Content Include="images\Rocket-launch.jpeg" />
-    <Content Include="images\space-cluster-stars.jpg" />
-    <Content Include="images\Space-cluster-stormy-stellar.jpg" />
-    <Content Include="images\Star-cluster-pink.jpeg" />
-    <Content Include="images\Star-nova.jpg" />
-    <Content Include="images\Sun-plnet-shadow.jpg" />
-    <Content Include="images\Venus-cater-farm-.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\9.jpg" />
+    <Content Include="images\10.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\12.jpeg" />
+    <Content Include="images\13.jpg" />
+    <Content Include="images\14.jpeg" />
+    <Content Include="images\15.jpg" />
+    <Content Include="images\16.jpg" />
+    <Content Include="images\17.jpeg" />
+    <Content Include="images\18.jpg" />
+    <Content Include="images\19.jpg" />
+    <Content Include="images\20.jpg" />
     <Content Include="styles\styles.css" />
     <Content Include="Home.aspx" />
     <Content Include="Web.config" />
