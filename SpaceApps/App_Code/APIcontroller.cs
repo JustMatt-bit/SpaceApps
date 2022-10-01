@@ -14,23 +14,24 @@ namespace SpaceApps.App_Code
         {
             try
             {
-                PostReturnToJSON(prompt, input_image);
-                string id = FilterJSON("response.json", "id");
+                string serverPath = HttpContext.Current.Server.MapPath("/temp/");
+                //PostReturnToJSON(prompt, input_image);
+                string id = FilterJSON(serverPath + "response.json", "id");
                 id = id.Remove(0, 1);
                 id = id.Remove(id.Length - 1, 1);
                 Console.WriteLine(id);
                 GetImageByID(id);
-                string image_url = FilterJSON("image-response.json", "output[0]");
+                string image_url = FilterJSON(serverPath + "image-response.json", "output[0]");
                 while (image_url.Equals("ul") || image_url.Equals("null"))
                 {
                     GetImageByID(id);
                     Console.WriteLine("Waiting for response");
-                    image_url = FilterJSON("image-response.json", "output[0]");
+                    image_url = FilterJSON(serverPath + "image-response.json", "output[0]");
                 }
                 image_url = image_url.Remove(0, 1);
                 image_url = image_url.Remove(image_url.Length - 1, 1);
                 DownloadImageByURL(image_url, outputFilename);
-                return false;
+                return true;
             }
             catch (Exception e)
             {
@@ -67,7 +68,7 @@ namespace SpaceApps.App_Code
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
                 var result = streamReader.ReadToEnd();
-                File.WriteAllText("response.json", result);
+                File.WriteAllText(HttpContext.Current.Server.MapPath("/temp/") + "response.json", result);
                 Console.WriteLine(result);
             }
         }
@@ -85,7 +86,7 @@ namespace SpaceApps.App_Code
                 //Here you got the JSON as string:
                 var result = streamReader.ReadToEnd();
                 // Write the text to a new file named "Response.json".
-                File.WriteAllText("image-response.json", result);
+                File.WriteAllText(HttpContext.Current.Server.MapPath("/temp/") + "image-response.json", result);
             }
 
         }
@@ -108,7 +109,7 @@ namespace SpaceApps.App_Code
             var jmes = new JmesPath();
             var result = jmes.Transform(input, expression);
 
-            File.WriteAllText("image_urls.txt", result);
+            File.WriteAllText(HttpContext.Current.Server.MapPath("/temp/") + "image_urls.txt", result);
             return result;
         }
 
