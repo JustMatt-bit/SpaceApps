@@ -120,17 +120,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
 }
     </script>
-
-<div class="box">
     <form name="search" runat="server">
-        <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" onmouseout="this.value = ''; this.blur();">
-    </form>
-    <i class="fas fa-search"></i>
-
-</div>
     <div class="box">
+        
+            <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" >
+        
+        <i class="fas fa-search"></i>
+
+    </div>
+    <div class="box" runat="server">
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                <br />
+                <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Label"></asp:Label>
             </div>
+        </form>
 <a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
 <i class="fab fa-youtube"> </i>
 </a>

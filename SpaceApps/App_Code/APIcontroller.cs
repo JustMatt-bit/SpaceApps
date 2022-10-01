@@ -15,7 +15,7 @@ namespace SpaceApps.App_Code
             try
             {
                 string serverPath = HttpContext.Current.Server.MapPath("/temp/");
-                //PostReturnToJSON(prompt, input_image);
+                PostReturnToJSON(prompt, input_image);
                 string id = FilterJSON(serverPath + "response.json", "id");
                 id = id.Remove(0, 1);
                 id = id.Remove(id.Length - 1, 1);

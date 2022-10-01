@@ -25,11 +25,11 @@
 
 .input {
     padding: 10px;
-    width: 80px;
+    width: 350px;
     height: 80px;
     background: none;
     border: 4px solid #ffd52d;
-    border-radius: 50px;
+    border-radius: 10px;
     box-sizing: border-box;
     font-family: Comic Sans MS;
     font-size: 26px;
@@ -37,7 +37,7 @@
     outline: none;
     transition: .5s;
 }
-.box:hover input{
+/*.box:hover input{
     width: 350px;
     background: #3b3640;
     border-radius: 10px;
@@ -55,11 +55,11 @@
 .box:hover i{
     opacity: 0;
     z-index: -1;
-}
+}*/
 
 
 /* YouTube icon */
-#ytb {
+/*#ytb {
   height: 50px;
   width: 50px;
   text-align: center;
@@ -74,21 +74,20 @@
   border-radius: 50%;
   border-color: #ff1717;
   box-shadow: 0 0 10px #ff4040;
-}
+}*/
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -104,18 +103,17 @@
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-    /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
     }
 
-/* Caption text */
+
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -126,7 +124,7 @@
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -135,7 +133,7 @@
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -151,7 +149,7 @@
         background-color: #717171;
     }
 
-/* Fading animation */
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
