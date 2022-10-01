@@ -13,7 +13,7 @@
     </video>
    <div class="box">
     <form name="search" runat="server">
-        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+        <input íd="prompt" runat="server" type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();" onkeydown="keyDownFunction()">
     </form>
     <i class="fas fa-search"></i>
 

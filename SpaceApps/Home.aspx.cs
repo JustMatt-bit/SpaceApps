@@ -11,7 +11,17 @@ namespace SpaceApps
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack) 
+            {
+                //LoadDefaultData();
+                
+            }
 
+            
+        }
+        protected void keyDownFunction(object sender, EventArgs e)
+        {
+            
         }
     }
 }

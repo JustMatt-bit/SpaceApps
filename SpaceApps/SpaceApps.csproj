@@ -88,7 +88,7 @@
     <Content Include="images\19.jpg" />
     <Content Include="images\20.jpg" />
     <Content Include="styles\styles.css" />
-    <Content Include="Home.aspx" />
+    <Compile Include="Home.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +126,8 @@
           <DevelopmentServerPort>49932</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>https://localhost:44351/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44351/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
