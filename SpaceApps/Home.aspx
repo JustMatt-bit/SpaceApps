@@ -9,7 +9,7 @@
 </head>
 <body>
      <video autoplay muted loop id="background-video">
-     <source src="styles/gif/back.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+     <source src="styles/gif" type="video/mp4"> Your browser does not support HTML5 video.
     </video>
    <div class="box">
     <form name="search" runat="server">
