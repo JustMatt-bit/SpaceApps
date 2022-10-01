@@ -87,6 +87,9 @@
     <Content Include="images\18.jpg" />
     <Content Include="images\19.jpg" />
     <Content Include="images\20.jpg" />
+    <Content Include="images\back.jpg" />
+    <Content Include="Results.aspx" />
+    <Content Include="styles\results_style\styles.css" />
     <Content Include="styles\styles.css" />
     <Content Include="Home.aspx" />
     <Content Include="Web.config" />
@@ -100,6 +103,13 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
