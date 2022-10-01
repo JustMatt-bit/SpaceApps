@@ -25,11 +25,11 @@
 
 .input {
     padding: 10px;
-    width: 80px;
+    width: 350px;
     height: 80px;
     background: none;
     border: 4px solid #ffd52d;
-    border-radius: 50px;
+    border-radius: 10px;
     box-sizing: border-box;
     font-family: Comic Sans MS;
     font-size: 26px;
@@ -37,13 +37,14 @@
     outline: none;
     transition: .5s;
 }
-.box:hover input{
+/*.box:hover input{
     width: 350px;
     background: #3b3640;
     border-radius: 10px;
 }
+
 .box i{
-    position: absolute;
+    position:absolute;
     top: 50%;
     right: 15px;
     transform: translate(-50%,-50%);
@@ -54,10 +55,11 @@
 .box:hover i{
     opacity: 0;
     z-index: -1;
-}
+}*/
+
 
 /* YouTube icon */
-#ytb {
+/*#ytb {
   height: 50px;
   width: 50px;
   text-align: center;
@@ -72,4 +74,93 @@
   border-radius: 50%;
   border-color: #ff1717;
   box-shadow: 0 0 10px #ff4040;
+}*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

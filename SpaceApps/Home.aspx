@@ -9,16 +9,134 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-     <video autoplay muted loop id="background-video">
-     <source src="styles/gif" type="video/mp4"> Your browser does not support HTML5 video.
+    <video autoplay muted loop id="background-video">
+        <source src="styles/gif" type="video/mp4">
+        Your browser does not support HTML5 video.
     </video>
-   <div class="box">
-    <form name="search" runat="server">
-        <input type="text" class="btn btn-primary btn-lg" name="txt" onmouseout="this.value = ''; this.blur();">
-    </form>
-    <i class="fas fa-search"></i>
 
-</div>
+    <!--bandau> <div class="text">Caption Text</div></!-->
+    !-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text 512 -->
+        <div class="mySlides fade">
+            <img src="images/1.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/2.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/3.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/4.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/5.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/6.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/7.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/8.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/9.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/10.jpg" style="width: 512px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/11.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/12.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/13.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/14.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/15.jpg" style="width: 512px">
+        </div>
+            <div class="mySlides fade">
+            <img src="images/16.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/17.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/18.jpg" style="width: 512px">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/19.jpg" style="width: 512px">
+        </div>
+          <div class="mySlides fade">
+            <img src="images/20.jpg" style="width: 512px">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+   
+
+   
+    
+
+    <script>
+let slideIndex = 1;
+
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+
+
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+ 
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+// patikriname ar glima perjungti img 
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+    </script>
+    <form name="search" runat="server">
+
+    <div class="box">
+        
+            <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" >
+        
+        <i class="fas fa-search"></i>
+
+
+    </div>
+    <div class="box" runat="server">
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                <br />
+                <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Label"></asp:Label>
+            </div>
+        </form>
 <a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
 <i class="fab fa-youtube"> </i>
 </a>
