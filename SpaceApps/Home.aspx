@@ -145,7 +145,7 @@ function showSlides(n) {
 
             </div>
             <div class="box" runat="server">
-                <asp:Button class="button-6" ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                <asp:Button class="button-6" ID="Button1" runat="server" OnClick="Button1_Click" Text="Generate" />
             </div>
             <div class="item7">
                 <br />
