@@ -23,7 +23,7 @@
         </div>
         
         <div id="button_container">
-            <asp:Button ID="Button1" class="btn btn-primary btn-lg" runat="server" Text="Button" />
+            <asp:Button ID="Button1" class="button-6" runat="server" Text="Save Generated Image" OnClick="Button1_Click" />
         </div>
         
     </form>

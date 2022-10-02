@@ -22,5 +22,13 @@ namespace SpaceApps
 
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.ContentType = "media/png";
+            Response.AppendHeader("Content-Disposition", "attachment; filename=generatedImage.png");
+            Response.TransmitFile(Server.MapPath("~/images/") + "generatedImage.png");
+            Response.End();
+        }
     }
 }

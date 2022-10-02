@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SpaceApps.Home"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SpaceApps.Home" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-
+   
 </head>
 <body>
     <video autoplay muted loop id="background-video">
@@ -64,7 +64,7 @@
         <div class="mySlides fade">
             <img src="images/15.jpg" style="width: 512px">
         </div>
-            <div class="mySlides fade">
+        <div class="mySlides fade">
             <img src="images/16.jpg" style="width: 512px">
         </div>
         <div class="mySlides fade">
@@ -76,17 +76,13 @@
         <div class="mySlides fade">
             <img src="images/19.jpg" style="width: 512px">
         </div>
-          <div class="mySlides fade">
+        <div class="mySlides fade">
             <img src="images/20.jpg" style="width: 512px">
         </div>
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-   
-
-   
-    
 
     <script>
         let slideIndex = 1;
@@ -122,25 +118,45 @@ function showSlides(n) {
     document.getElementById('ValueHiddenField').value = slideIndex;
 }
     </script>
+    <style>
+    .grid-container {
+        display: grid;
+        gap: 20px 200px;
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    }
+    </style>
+
     <form name="search" runat="server">
-    <asp:hiddenfield id="ValueHiddenField" Value="1" runat="server"/>
-    <div class="box">
-        
-            <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" >
-        
-        <i class="fas fa-search"></i>
+        <asp:HiddenField ID="ValueHiddenField" Value="1" runat="server" />
+
+        <div class="grid-container">
+            <div class="box">
+
+                <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server">
+
+                <i class="fas fa-search"></i>
 
 
-    </div>
-    <div class="box" runat="server">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-                <br />
-                <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Label"></asp:Label>
             </div>
-        </form>
-<a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
-<i class="fab fa-youtube"> </i>
-</a>
+            <div class="box" runat="server">
+                <asp:Button class="button-6" ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            </div>
+            <div class="item7">
+                <br />
+                <asp:Label Style=" display: block; text-align: center" ID="Label1" runat="server" ForeColor="White" Text="Label"></asp:Label>
+            </div>
+        </div>
+
+    </form>
+    <a href="https://www.youtube.com/c/ShortCode" target="_blank" id="ytb">
+        <i class="fab fa-youtube"></i>
+    </a>
 
 
 </body>

@@ -1,1 +1,1 @@
-"https://replicate.com/api/models/stability-ai/stable-diffusion/files/12870c89-3b06-43e3-a722-75825d1a83be/out-0.png"
+"https://replicate.com/api/models/stability-ai/stable-diffusion/files/55d3295c-5d9d-46a3-97c1-0f8c513ee728/out-0.png"

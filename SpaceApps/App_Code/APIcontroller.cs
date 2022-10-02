@@ -56,7 +56,8 @@ namespace SpaceApps.App_Code
                                         "\"prompt\": \"" + prompt + "\"," +
                                         "\"init_image\": \"" + ref_img_url + "\"," +
                                         "\"width\": \"512\"," +
-                                        "\"height\": \"512\"" +
+                                        "\"height\": \"512\"," +
+                                        "\"prompt_strength\": \"0.6\"" +
 
                                     "}" +
                                 "}";
