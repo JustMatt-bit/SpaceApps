@@ -10,6 +10,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div id="logo">
+            
+        </div>
         <div id="label">
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
@@ -22,8 +25,8 @@
             </div>
         </div>
         
-        <div id="button_container">
-            <asp:Button ID="Button1" class="btn btn-primary btn-lg" runat="server" Text="Button" />
+        <div id="button_container" >
+            <asp:Button ID="Button1"   class="btn btn-warning btn-lg" runat="server"  Text="Button" />
         </div>
         
     </form>

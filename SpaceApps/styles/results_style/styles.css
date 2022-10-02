@@ -7,16 +7,18 @@
     font-weight:1000;
 }
 body{
-    margin:0;
-    padding:0;
-    background-image: url("../../images/back.jpg");
+
+    background-image: url("../../images/sky.gif");
+    
     
 }
 .photos{
     height: 512px;
     width: 512px;
     display: inline-block;
-    
+    border-radius: 25px;
+    border: solid orange 2px;
+
 }
 #photos1 {
     
@@ -58,7 +60,7 @@ body {
   align-items: center;
 }
 
-button {
+.btn .btn-warning .btn-lg {
   position: relative;
   font-weight: 600;
   height: 40px;
@@ -68,8 +70,14 @@ button {
   background-color: transparent;
   border-radius: 5px;
   cursor: pointer;
-}
+  color:blueviolet;
 
+}
+.btn-lg .btn .btn-primary btn-lg
+{
+    background-color: #DB9453;
+    
+}
 button:after {
   content: "";
   position: absolute;
@@ -87,4 +95,15 @@ button:hover:after {
   top: 0px;
   left: 0px;
 }
-
+#logo{
+    background-image: url("../../images/orange.png");
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#Button1{
+    font-weight: bold;
+}
