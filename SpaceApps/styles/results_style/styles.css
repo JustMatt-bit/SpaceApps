@@ -9,8 +9,7 @@
 body{
     margin:0;
     padding:0;
-    background-image: url("../../images/back.jpg");
-    
+    -back
 }
 .photos{
     height: 512px;
@@ -19,14 +18,12 @@ body{
     
 }
 #photos1 {
-    
     margin-left: 16.5vw;
     margin-top: 3vh;
-    background-image: url("../../images/1.jpg");
+    background-image: url("../../images/usedImage.jpg");
 }
 #photos2 {
-
-    background-image: url("../../images/5.jpg");
+    background-image: url("../../images/generatedImage.png");
 }
 #parent{
     width: 100vw;
@@ -42,7 +39,7 @@ body{
 
 }
 
-/* -------------------------------------------**/
+ -------------------------------------------*
 *,
 :before,
 :after {

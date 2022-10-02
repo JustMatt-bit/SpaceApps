@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SpaceApps.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SpaceApps.Home"  %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
     <video autoplay muted loop id="background-video">
@@ -15,7 +15,6 @@
     </video>
 
     <!--bandau> <div class="text">Caption Text</div></!-->
-    !-- Slideshow container -->
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text 512 -->
@@ -90,14 +89,15 @@
     
 
     <script>
-let slideIndex = 1;
+        let slideIndex = 1;
+
 
 
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
-
+    showSlides(slideIndex += n);
+    document.getElementById('ValueHiddenField').value = slideIndex;
 }
 
 function currentSlide(n) {
@@ -118,11 +118,12 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-  slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex - 1].style.display = "block";
+    document.getElementById('ValueHiddenField').value = slideIndex;
 }
     </script>
     <form name="search" runat="server">
-
+    <asp:hiddenfield id="ValueHiddenField" Value="1" runat="server"/>
     <div class="box">
         
             <input id="inputBoxPrompt" type="text" class="input" name="txt" runat="server" >

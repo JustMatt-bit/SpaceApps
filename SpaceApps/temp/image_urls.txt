@@ -1,1 +1,1 @@
-null
+"https://replicate.com/api/models/stability-ai/stable-diffusion/files/12870c89-3b06-43e3-a722-75825d1a83be/out-0.png"

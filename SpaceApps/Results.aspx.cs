@@ -11,6 +11,15 @@ namespace SpaceApps
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetExpires(DateTime.Now);
+            Response.Cache.SetNoServerCaching();
+            Response.Cache.SetNoStore();
+
+            string index = Request.QueryString["index"].ToString();
+
+            Label1.Text = Request.QueryString["name"].ToString();
+
 
         }
     }
